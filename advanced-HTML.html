@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Advanced Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="basic-CSS.html">CSS</a></li>
+                <li><a href="basic-Java.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Advanced Tutorial</h1>
+        <p>In this advanced section, you'll learn about semantic HTML, forms, multimedia, and working with APIs.</p>
+        
+        <div class="section">
+            <h2>1. Semantic HTML</h2>
+            <p>Semantic HTML elements clearly describe their meaning. These elements help with accessibility and SEO:</p>
+            <pre class="example">
+&lt;header&gt;Website Header&lt;/header&gt;
+&lt;nav&gt;Navigation Menu&lt;/nav&gt;
+&lt;article&gt;Main Content&lt;/article&gt;
+&lt;footer&gt;Website Footer&lt;/footer&gt;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>2. Forms and Input Validation</h2>
+            <p>HTML forms allow users to submit data. You can also add validation to ensure data is correct before submission:</p>
+            <pre class="example">
+&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="email"&gt;Email:&lt;/label&gt;
+    &lt;input type="email" id="email" name="email" required&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Multimedia: Audio and Video</h2>
+            <p>HTML supports multimedia elements, such as audio and video, to make your website more interactive:</p>
+            <pre class="example">
+&lt;audio controls&gt;
+    &lt;source src="audio.mp3" type="audio/mpeg"&gt;
+    Your browser does not support the audio element.
+&lt;/audio&gt;
+
+&lt;video controls width="320" height="240"&gt;
+    &lt;source src="video.mp4" type="video/mp4"&gt;
+    Your browser does not support the video tag.
+&lt;/video&gt;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>4. Working with APIs</h2>
+            <p>You can fetch data from external sources using HTML and JavaScript. This example shows how to fetch and display data from an API:</p>
+            <pre class="example">
+&lt;script&gt;
+    fetch('https://api.example.com/data')
+        .then(response =&gt; response.json())
+        .then(data =&gt; {
+            console.log(data);
+            document.getElementById('api-output').textContent = JSON.stringify(data);
+        })
+        .catch(error =&gt; console.error('Error:', error));
+&lt;/script&gt;
+
+&lt;div id="api-output"&gt;API data will appear here&lt;/div&gt;
+            </pre>
+        </div>
+
+        <div class="navigation">
+            <a href="intermediate-HTML.html" class="button">Previous</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerdJoe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

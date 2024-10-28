@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Advanced Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="basic-HTML.html">HTML</a></li>
+                <li><a href="basic-CSS.html">CSS</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>JavaScript Advanced Tutorial</h1>
+        <p>Learn advanced concepts like asynchronous programming, closures, and ES6 features.</p>
+
+        <div class="section">
+            <h2>1. Promises and Async/Await</h2>
+            <p>Handle asynchronous operations:</p>
+            <pre class="example">
+async function fetchData() {
+    let response = await fetch("https://api.example.com/data");
+    let data = await response.json();
+    console.log(data);
+}
+fetchData();
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>2. Closures</h2>
+            <p>Understand closures and their use cases:</p>
+            <pre class="example">
+function makeCounter() {
+    let count = 0;
+    return function() {
+        return ++count;
+    };
+}
+
+let counter = makeCounter();
+console.log(counter()); // Outputs 1
+console.log(counter()); // Outputs 2
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>3. ES6 Features</h2>
+            <p>Explore new JavaScript features such as arrow functions, template literals, and destructuring:</p>
+            <pre class="example">
+// Arrow function
+const greet = () => "Hello, ES6!";
+
+// Template literals
+let name = "John";
+console.log(`Hello, ${name}!`);
+
+// Destructuring
+let [a, b] = [1, 2];
+console.log(a); // Outputs 1
+            </pre>
+        </div>
+
+        <div class="navigation">
+            <a href="intermediate-Java.html" class="button">Previous</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerdJoe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

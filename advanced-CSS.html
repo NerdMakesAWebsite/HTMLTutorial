@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Advanced Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="basic-HTML.html">HTML</a></li>
+                <li><a href="basic-Java.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>CSS Advanced Tutorial</h1>
+        <p>Dive deeper into animations, grid layouts, and CSS variables.</p>
+
+        <div class="section">
+            <h2>1. CSS Animations</h2>
+            <p>Create animations using the <code>@keyframes</code> rule:</p>
+            <pre class="example">
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.fade-in {
+    animation: fadeIn 2s ease-in-out;
+}
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>2. Grid Layout</h2>
+            <p>Use CSS Grid for complex layouts:</p>
+            <pre class="example">
+.container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 10px;
+}
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>3. CSS Variables</h2>
+            <p>Use variables to simplify and maintain styles:</p>
+            <pre class="example">
+:root {
+    --primary-color: #3498db;
+}
+
+button {
+    background-color: var(--primary-color);
+    color: white;
+}
+            </pre>
+        </div>
+
+        <div class="navigation">
+            <a href="intermediate-CSS.html" class="button">Previous</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerdJoe. All rights reserved.</p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Intermediate Tutorial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="basic-CSS.html">CSS</a></li>
+                <li><a href="basic-Java.html">JavaScript</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>HTML Intermediate Tutorial</h1>
+        <p>Expand your HTML knowledge with lists, tables, forms, and attributes.</p>
+
+        <div class="section">
+            <h2>1. HTML Lists</h2>
+            <p>There are two main types of lists in HTML: ordered (&lt;ol&gt;) and unordered (&lt;ul&gt;):</p>
+            <pre class="example">
+&lt;ul&gt;
+    &lt;li&gt;Item 1&lt;/li&gt;
+    &lt;li&gt;Item 2&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;ol&gt;
+    &lt;li&gt;First&lt;/li&gt;
+    &lt;li&gt;Second&lt;/li&gt;
+&lt;/ol&gt;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>2. HTML Tables</h2>
+            <p>Tables allow you to display data in a tabular format:</p>
+            <pre class="example">
+&lt;table&gt;
+    &lt;tr&gt;
+        &lt;th&gt;Name&lt;/th&gt;
+        &lt;th&gt;Age&lt;/th&gt;
+    &lt;/tr&gt;
+    &lt;tr&gt;
+        &lt;td&gt;Alice&lt;/td&gt;
+        &lt;td&gt;24&lt;/td&gt;
+    &lt;/tr&gt;
+&lt;/table&gt;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>3. Forms and Input Elements</h2>
+            <p>Forms are used to collect user input. Here's how to create a basic form:</p>
+            <pre class="example">
+&lt;form action="/submit" method="POST"&gt;
+    &lt;label for="username"&gt;Username:&lt;/label&gt;
+    &lt;input type="text" id="username" name="username"&gt;
+    &lt;br&gt;
+    &lt;label for="password"&gt;Password:&lt;/label&gt;
+    &lt;input type="password" id="password" name="password"&gt;
+    &lt;br&gt;
+    &lt;input type="submit" value="Submit"&gt;
+&lt;/form&gt;
+            </pre>
+        </div>
+
+        <div class="section">
+            <h2>4. HTML Attributes</h2>
+            <p>Attributes provide additional information about HTML elements. Common attributes include <em>id</em>, <em>class</em>, <em>style</em>, and <em>title</em>:</p>
+            <pre class="example">
+&lt;div id="main" class="container" title="Main Container"&gt;Content&lt;/div&gt;
+&lt;p style="color: red;"&gt;This is a styled paragraph.&lt;/p&gt;
+            </pre>
+        </div>
+
+        <div class="navigation">
+            <a href="basic-HTML.html" class="button">Previous</a>
+            <a href="advanced-HTML.html" class="button">Next</a>
+        </div>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 NerdJoe. All rights reserved.</p>
+    </footer>
+</body>
+</html>
